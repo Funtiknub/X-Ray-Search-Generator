@@ -7,24 +7,29 @@
 1. Убедитесь, что установлен Python 3.x
 2. Скачайте файл `xray_search.py`
 3. Запустите в терминале:
+
 ```bash
 python x-ray_search.py
 ```
+
 или:
 
+```bash
 py x-ray_search.py
+```
 
 ## Руководство по использованию
 
 При запуске программы вы увидите главное меню:
 
 === X-Ray Search Generator ===
-1.Создать поисковый запрос
-2.Поиск работников/вакансий
-3.Специальный поиск по GitHub
-4.Специальный поиск по LinkedIn
-5.Информация о операторах
-6.Выход
+
+1. Создать поисковый запрос
+2. Поиск работников/вакансий
+3. Специальный поиск по GitHub
+4. Специальный поиск по LinkedIn
+5. Информация о операторах
+6. Выход
 
 ## Основные возможности
 
@@ -40,23 +45,26 @@ py x-ray_search.py
 
 Базовый поиск с возможностью добавления различных операторов.
 
-**Пример использования:** 
+**Пример использования:**
 
-Шаг 1: Выберите "1. Создать поисковый запрос"
-Шаг 2: Введите "python developer"
-Шаг 3: Выберите "1. Добавить ограничение по сайту"
-Шаг 4: Введите "github.com"
-Шаг 5: Выберите "2. Добавить параметр URL"
-Шаг 6: Введите "projects"
-Шаг 7: Выберите "5. Завершить и показать результат"
-Результат: site:github.com/ inurl:projects "python developer"
+1. Выберите "1. Создать поисковый запрос"
+2. Введите "python developer"
+3. Выберите "1. Добавить ограничение по сайту"
+4. Введите "github.com"
+5. Выберите "2. Добавить параметр URL"
+6. Введите "projects"
+7. Выберите "5. Завершить и показать результат"
 
+Результат:
+```bash
+site:github.com/ inurl:projects python developer
+```
 
 ### 2. Поиск работников/вакансий
 
 Специализированный поиск по сайтам с вакансиями и резюме. Доступны следующие категории сайтов:
 
-Работные сайты:
+#### Работные сайты:
 - hh.ru
 - superjob.ru
 - rabota.ru
@@ -67,7 +75,7 @@ py x-ray_search.py
 - avito.ru
 - indeed.com
 
-Профессиональные сети:
+#### Профессиональные сети:
 - linkedin.com
 - ru.linkedin.com
 - vk.com/resume
@@ -75,14 +83,14 @@ py x-ray_search.py
 - moikrug.ru
 - github.com
 
-Фриланс площадки:
+#### Фриланс площадки:
 - freelance.ru
 - fl.ru
 - freelancehunt.com
 - kwork.ru
 - weblancer.net
 
-Специализированные IT:
+#### Специализированные IT:
 - career.habr.com
 - stackoverflow.com/jobs
 - djinni.co
@@ -91,17 +99,20 @@ py x-ray_search.py
 - geeklink.io
 - github.io
 
-**Пример поиска вакансий:** 
+**Пример поиска вакансий:**
 
-Шаг 1: Выберите "2. Поиск работников/вакансий"
-Шаг 2: Выберите "2. Поиск вакансий"
-Шаг 3: Введите должность на русском: "Python разработчик"
-Шаг 4: Введите должность на английском: "Python Developer"
-Шаг 5: Выберите категории сайтов: 1,4 (Работные сайты и Специализированные IT)
-Шаг 6: Выберите город: Москва
-Шаг 7: Добавьте уровень: middle
-Результат: site:hh.ru OR site:superjob.ru OR site:career.habr.com OR site:geeklink.io Python разработчик OR Python Developer Москва middle
+1. Выберите "2. Поиск работников/вакансий"
+2. Выберите "2. Поиск вакансий"
+3. Введите должность на русском: "Python разработчик"
+4. Введите должность на английском: "Python Developer"
+5. Выберите категории сайтов: 1,4 (Работные сайты и Специализированные IT)
+6. Выберите город: Москва
+7. Добавьте уровень: middle
 
+Результат:
+```bash
+site:hh.ru OR site:superjob.ru OR site:career.habr.com OR site:geeklink.io Python разработчик OR Python Developer Москва middle
+```
 
 ### 3. Специальный поиск по GitHub
 
@@ -109,11 +120,14 @@ py x-ray_search.py
 
 **Пример поиска:**
 
-Шаг 1: Выберите "3. Специальный поиск по GitHub"
-Шаг 2: Выберите "1. Чистый поиск"
-Шаг 3: Введите: python api
-Результат: site:github.com/ python api -inurl:topics|issues|projects|exchange|repositories|trending
+1. Выберите "3. Специальный поиск по GitHub"
+2. Выберите "1. Чистый поиск"
+3. Введите: python api
 
+Результат:
+```bash
+site:github.com/ python api -inurl:topics|issues|projects|exchange|repositories|trending
+```
 
 ### 4. Специальный поиск по LinkedIn
 
@@ -126,73 +140,74 @@ py x-ray_search.py
 
 **Пример поиска OpenToWork профилей:**
 
-Шаг 1: Выберите "4. Специальный поиск по LinkedIn"
-Шаг 2: Выберите "1. Поиск людей открытых к работе"
-Шаг 3: Введите: java developer
-Результат: site:linkedin.com/ inurl:opentowork-activity java developer
+1. Выберите "4. Специальный поиск по LinkedIn"
+2. Выберите "1. Поиск людей открытых к работе"
+3. Введите: java developer
 
+Результат:
+```bash
+site:linkedin.com/ inurl:opentowork-activity java developer
+```
 
 **Пример поиска в постах:**
 
-Шаг 1: Выберите "4. Специальный поиск по LinkedIn"
-Шаг 2: Выберите "4. Поиск в постах"
-Шаг 3: Введите: резюме java
-Результат: site:linkedin.com/posts резюме java
+1. Выберите "4. Специальный поиск по LinkedIn"
+2. Выберите "4. Поиск в постах"
+3. Введите: резюме java
 
+Результат:
+```bash
+site:linkedin.com/posts резюме java
+```
 
 ## Операторы поиска и их использование
 
 Основные операторы:
-- `site:` - поиск на конкретном сайте
-  Пример: `site:github.com python`
-- `inurl:` - поиск в URL страницы
-  Пример: `site:linkedin.com/ inurl:opentowork`
-- `intitle:` - поиск в заголовке
-  Пример: `intitle:"python developer"`
-- `filetype:` - поиск по типу файла
-  Пример: `filetype:pdf "python tutorial"`
-- `"точное совпадение"` - поиск точной фразы
-  Пример: `"senior java developer"`
-- `-` (минус) - исключение слова/фразы
-  Пример: `python -django`
-- `OR` или `|` - логическое ИЛИ
-  Пример: `(python OR java) developer`
+
+| Оператор | Описание | Пример |
+|----------|----------|--------|
+| `site:` | Поиск на конкретном сайте | `site:github.com python` |
+| `inurl:` | Поиск в URL страницы | `site:linkedin.com/ inurl:opentowork` |
+| `intitle:` | Поиск в заголовке | `intitle:python developer` |
+| `filetype:` | Поиск по типу файла | `filetype:pdf python tutorial` |
+| `-` | Исключение слова/фразы | `python -django` |
+| `OR` или `\|` | Логическое ИЛИ | `python OR java developer` |
 
 ## Примеры готовых запросов
 
-1. Поиск резюме Java разработчиков в Москве:
-
+### 1. Поиск резюме Java разработчиков в Москве:
+```bash
 site:hh.ru OR site:linkedin.com Java Developer OR Java разработчик Москва senior
+```
 
-
-2. Поиск Python проектов на GitHub:
-
+### 2. Поиск Python проектов на GitHub:
+```bash
 site:github.com/ machine learning inurl:python -inurl:issues
+```
 
+### 3. Поиск DevOps специалистов на LinkedIn:
+```bash
+site:linkedin.com/ inurl:opentowork-activity DevOps Engineer
+```
 
-3. Поиск DevOps специалистов на LinkedIn:
-
-site:linkedin.com/ inurl:opentowork-activity "DevOps Engineer"
-
-
-4. Поиск 1C разработчиков:
-
+### 4. Поиск 1C разработчиков:
+```bash
 site:hh.ru OR site:superjob.ru 1C разработчик OR 1C программист Москва
+```
 
-
-5. Поиск стажировок:
-
+### 5. Поиск стажировок:
+```bash
 site:hh.ru OR site:career.habr.com стажер OR стажировка OR intern OR internship python
-
+```
 
 ## Рекомендации по эффективному использованию
 
-1. Всегда используйте кавычки для точного поиска фраз
-2. Комбинируйте русские и английские варианты должностей
-3. При поиске на LinkedIn используйте специальные операторы inurl:opentowork-activity
-4. Для GitHub исключайте служебные разделы -inurl:issues
-5. Используйте несколько сайтов через OR для расширения охвата
-6. Добавляйте уровень специалиста и город для уточнения результатов
+1. Используйте русские и английские варианты ключевых слов
+2. Комбинируйте разные сайты через оператор OR
+3. При поиске на LinkedIn добавляйте `inurl:opentowork-activity`
+4. Для GitHub исключайте служебные разделы через `-inurl:`
+5. Указывайте город и уровень специалиста для точности
+6. Используйте операторы `site:` и `inurl:` для конкретных разделов сайтов
 
 ## Ограничения и особенности
 
@@ -201,5 +216,6 @@ site:hh.ru OR site:career.habr.com стажер OR стажировка OR inter
 3. Результаты могут различаться в зависимости от региона
 4. Учитывайте правила использования сайтов при поиске
 
+## Лицензия
 
-Лицензия MIT
+MIT License
